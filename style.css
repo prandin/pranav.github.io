@@ -1,0 +1,29 @@
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+a:active {
+  	color: black;
+  	background-color: white;
+  	text-decoration: underline;
+}
+
+body {
+	background-color: CornflowerBlue;}
+ 	h1 {color: NavajoWhite;}
+  	p {color: Gainsboro;
+}
