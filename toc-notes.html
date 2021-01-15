@@ -3,7 +3,7 @@
 	</head>
 
 	<body>
-		<h1>Theory of Computation</h1>
+		<h1>Course: Theory of Computation [Lecture Notes]</h1>
 		<h2>Undecidability - Hierarchy</h2>
 		<p>For the purpose of understanding undecidability, let us assume three classes of languages:
 			<ol>
@@ -14,7 +14,37 @@
 		Recursive languages are analogous to decidable languages. 
 		</p>
 		<p>
-			A language is semidecidable if and only if a TM can be constructed fir the language i.e. the language is recursively enumerable. 
+			A language is semidecidable if and only if a TM can be constructed for the language i.e. the language is recursively enumerable. In other words, if a language is semidecidable, TMs are guaranteed to exist.
 		</p>
+		<p>Undecidable languages are those that are not decidable. No halting TMs exist for such languages, though TMs may exist.
+			<ul>
+				<li>We can say that if a language is not recursively enumerable, the language is definitely undecidable. But the converse need not be true. Non-recursive, recursively enumerable languages can also be undecidable.</li>
+				<li>Some undecidable languages may be semidecidable</li>
+			</ul>
+		<p>RECURSIVE LANGUAGES: Completely decidable and semidecidable
+		<br>NON-RECURSIVE, RECURSIVELY ENUMERABLE LANGUAGES: Can be semidecidable or undecidable
+		<br>NOT RECURSIVELY ENUMERABLE LANGUAGES: Completely undecidable
+		<br>The above points become obvious since TMs can be constructed for the first two cases (halting TMs for the first, while general TMs for the second), but not the third.
+		</p>
+		<h3>Automata</h3>
+		<ul>
+			<li>For FAs, almost all properties are decidable</li>
+			<li>For PDAs, some properties are decidable</li>
+			<li>For TMs, almost all properties are undecidable</li>
+		</ul>
+		
+		<h3>Decision Properties for FAs/ RLs</h3>
+		<p>Some of the decision properties we will review are:
+			<ol>
+				<li>Emptiness</li>
+				<li>Finiteness</li>
+				<li>Membership</li>
+				<li>Equality</li>
+				<li>Totality of Universality</li>
+				<li>Disjointness</li>
+				<li>Set Containment</li>
+				<li>Ambiguity</li>
+				<li>Regularity</li>
+				<li>Halting Problem</li>
 	</body>
 </html>
