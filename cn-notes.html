@@ -10,7 +10,13 @@
 			<li>The SFD indicates when the frame begins, and the receivers check their own addresses with the one in the frame. Assuming that a frame has arrived at the intended receiver and it has begun reading, what happens if another frame arrives at the same receiver. </li>
 			<ul>
 				<li>Does it treat the second frame as a separate entity, or as a part of the current frame? </li>
+				<li>We could ensure that all frames are of fixed size. Issue? Fragmentation </li>
 			</ul>
+			<li>Variable Size Framing could be implemented using a length field (used in Ethernets) or an end-frame delimiter (used in Token Ring) </li>
+			<ul>
+				<li>Character oriented methods</li> - What if the delimiter appears in the actual data?
+				<li>Byte stuffing</li>
+				<li>Bit stuffing: add '0' after a pattern of 0111111 in the data field</li> 
 		</ol>
 	</body>
 </html>
