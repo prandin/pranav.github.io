@@ -16,7 +16,9 @@
 			<ul>
 				<li>Character oriented methods</li> - What if the delimiter appears in the actual data?
 				<li>Byte stuffing</li>
-				<li>Bit stuffing: add '0' after a pattern of 0111111 in the data field</li> 
+				<li>Bit stuffing: add a "complementary" bit for every first n-1 bit-sequence that match with an n-bit delimiter.</li>
 		</ol>
+		<p>Example 1 : If the frame delimiter flag used by a transmitter is "0111", how is the data sequence "01110110" transmitted using bit-stuffing?
+			<br>"0111" means match with "011" in data and add complementary bit "0" to separate the data from the flag. Transmitted data = 011 0 1011 0 0
 	</body>
 </html>
