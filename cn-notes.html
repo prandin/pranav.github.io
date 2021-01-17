@@ -59,8 +59,22 @@
 			(b)The file split into 10 uniform packets takes T2 time
 			(c)The file split into 20 uniform packets takes T3 time
 			<br><br>
+
+			<p>
+				We can save some time if the data to be sent is split into smaller packets and transmitted using pipeline. The,
+				<br>
+				Total time taken to transmit the entire data
+				<br>
+				= Time for the first packet to reach the destination +
+				Time for remaining (n-1) packets to reach the destination
+				<br>
+				= (# hops)[Transmission_Delay + Propagation_Delay] + (# hops - 1)[Queueing Delay + Processing Delay] + (n-1)[Transmission_Delay]
+				<br><br>
 			<em>Question 5:</em> Considering question 4, now assume that transmission between sender and receiver has 2 routers. Calculate the total time taken for transmission for each of the three cases.
 		</p>
+
+		<p>
+			<b>Note:</b>Observe that the improvement in transmission time is not linear with the decrease in packet size.
 
 	</body>
 </html>
