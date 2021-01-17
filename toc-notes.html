@@ -11,7 +11,7 @@
 				<li>Recursively Enumerable Languages, but not Recursive, and</li>
 				<li>Recursively Enumerable Languages</li>
 			</ol>
-		Recursive languages are analogous to decidable languages. 
+		Recursive languages are analogous to decidable languages.
 		</p>
 		<p>
 			A language is semidecidable if and only if a TM can be constructed for the language i.e. the language is recursively enumerable. In other words, if a language is semidecidable, TMs are guaranteed to exist.
@@ -32,12 +32,14 @@
 			<li>For PDAs, some properties are decidable</li>
 			<li>For TMs, almost all properties are undecidable</li>
 		</ul>
-		
+
 		<h3>Decision Properties for FAs/ RLs</h3>
 		<p>Some of the decision properties we will review are:
 			<ol>
-				<li>Emptiness</li>
-				<li>Finiteness</li>
+				<li>Emptiness: Remove all unreachable states from start state. If the resulting FA has at least one final state, then
+				the language of the FA is non-empty. Otherwise, it is empty.</li>
+				<li>Finiteness: Remove all unreachable states from start state and dead states (states from which a final state is unreachable). If the
+				resulting FA is free from cycles and loops, the language of the FA is finite. Otherwise, it is infinte.</li>
 				<li>Membership</li>
 				<li>Equality</li>
 				<li>Totality of Universality</li>
@@ -46,5 +48,15 @@
 				<li>Ambiguity</li>
 				<li>Regularity</li>
 				<li>Halting Problem</li>
+
+			</ol>
+		</p>
+
+		<footer>
+		 <p>Author: Pranav D.</p>
+		 <p><a href="www.pranavd.ml">Home</a></p>
+		</footer>
 	</body>
+
+
 </html>
