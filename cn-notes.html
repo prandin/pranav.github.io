@@ -32,7 +32,31 @@
 			The total time taken for a frame to reach from a sender to receiver =
 			Setup Time + Transmission Time + (#hops)Propagation Delay + Tear-down time
 		</p>
-		
+		<p>Properties of Circuit Switching:
+			<ul>
+				<li>Since the connection resources are reserved and fixed during communication, there is no need for a header</li>
+				<li>The frames is guaranteed to arrive in the same order as they are sent i.e. there is no reordering</li>
+			</ul>
+		</p>
+
+		<h3>Packet Switching</h3>
+		<p>
+			Packet switching uses store-and-forward technique during transmission since it is not guaranteed that the
+			resources are reserved. When this happens, intermediate routers will "queue" the packet until it can be transmitted on the link.
+			<br>
+			Total time = (#hops)[Transmission delay + Propagation Delay] + (#hops - 1)[Queueing delay + Processing Delay]
+			<br>
+			Question 1: How is the total time for transmission for circuit switching different from packet switching?
+			<br>
+			Question 2: Which switching technique is preferred when the packet size is very large?
+			<br>
+			Question 3: How can the total time for transmission in packet switching be reduced?
+			<br>
+			Question 4: Consider a file of size 1000 bytes. Compare the transmission delays T1, T2, and T3 respectively of the store-and-forward packet switching approaches given below. Assume the header length of a packet to be 100 bytes, and the bandwidth to be same for all cases.
+			(a)The entire file is transmitted as such takes T1 time
+			(b)The file split into 10 uniform packets take T2 time
+			(c)The file split into 20 uniform packets take T3 time
+		</p>
 
 	</body>
 </html>
