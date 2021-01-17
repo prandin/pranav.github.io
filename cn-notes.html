@@ -16,7 +16,7 @@
 			<ul>
 				<li>Character oriented methods</li> - What if the delimiter appears in the actual data?
 				<li>Byte stuffing</li>
-				<li>Bit stuffing: add a "complementary" bit for every first n-1 bit-sequence that match with an n-bit delimiter.</li>
+				<li>Bit stuffing: add a "complementary" bit for every first n-1 bit-sequence that matches with an n-bit delimiter.</li>
 		</ol>
 		<p>Example 1 : If the frame delimiter flag used by a transmitter is "0111", how is the data sequence "01110110" transmitted using bit-stuffing?
 			<br>"0111" means match with "011" in data and add complementary bit "0" to separate the data from the flag. Transmitted data = 011 0 1011 0 0
@@ -26,8 +26,13 @@
 		<p>In the context of computer networks, switching is the process of forwarding a packet from one port to another. Routing, on the other hand is the process of preparing routing tables at each router. </p>
 		<p>The two common methods of switching are (a) circuit switching, and (b) packet switching.
 			Among them, circuit switching used to be prevalent in telephone communication (at exchange centers) at a time when the concept of computer networks and layering did not exist.
-			During  Packet switching is performed at network layer, while circuit switching is not.
+			Packet switching is performed at network layer, while circuit switching is not.
 		</p>
+		<p>
+			The total time taken for a frame to reach from a sender to receiver =
+			Setup Time + Transmission Time + (#hops)Propagation Delay + Tear-down time
+		</p>
+		
 
 	</body>
 </html>
