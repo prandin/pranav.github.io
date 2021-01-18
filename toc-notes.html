@@ -40,10 +40,17 @@
 				the language of the FA is non-empty. Otherwise, it is empty.</li>
 				<li>Finiteness: Remove all unreachable states from start state and dead states (states from which a final state is unreachable). If the
 				resulting FA is free from cycles and loops, the language of the FA is finite. Otherwise, it is infinte.</li>
-				<li>Membership</li>
-				<li>Equivalence of FAs: To FAs M1, M2 are said to be equivalent if and only if both have the same language.
+				<li>Membership: If the transition path for complete input string w from start state ends at a final state, then w is in the language.
+				Note that membership can only be decided after the entire string has been read.</li>
+				<li>Equivalence of FAs: Two FAs M1, M2 are said to be equivalent if and only if both have the same language.
 				Both M1 and M2 need not have the same number of states. However, if they do, then they are
-			said to be isomorphic. </li>
+			said to be isomorphic.
+		<br>
+				To test for equivalency, construct a transition table that contains pair of states (s, t) such that s is in M1 and t is in M2.
+				For each input symbol, if we obtain pairs of the form (F, NF), or (NF, F), then we can declare that the two machines are not equivalent.
+				Otherwise, keep constructing the tables until no further pairs are possible. If all the states are of (F, F), or (NF, NF), then the
+				machines are equivalent.
+	 			</li>
 				<li>Totality of Universality</li>
 				<li>Disjointness</li>
 				<li>Set Containment</li>
