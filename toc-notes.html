@@ -51,8 +51,11 @@
 				Otherwise, keep constructing the tables until no further pairs are possible. If all the states are of (F, F), or (NF, NF), then the
 				machines are equivalent.
 	 			</li>
-				<li>Totality of Universality</li>
-				<li>Disjointness</li>
+				<li>Totality of Universality: Does the FA accept language &Sigma*?
+				To test, convert the given FA to minimal FA. If it represents the minimal FA for &Sigma*, then we can say
+			that the FA satisfies totality.</li>
+				<li>Disjointness: Take the cross product of two machines to create new FA. If this new FA contains any final
+				state, then the languages of the two FAs are not disjoint. Otherwise, they are disjoint.</li>
 				<li>Set Containment</li>
 				<li>Ambiguity</li>
 				<li>Regularity</li>
