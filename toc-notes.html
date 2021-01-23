@@ -1,9 +1,35 @@
 <html>
 	<head>
 	</head>
-
+.html
 	<body>
 		<h1>Course: Theory of Computation [Lecture Notes]</h1>
+
+		<h2>Countability and Reducibility</h2>
+		<p>
+			<b>Countable Sets:</b> A set is said to be countable if all the elements of the set can
+			be put in one-to-one correspondence with the set of natural numbers. It would somewhat be similar
+			to giving an index to each element of the set, like key-value pairs. All finite sets are countable.
+			<br>
+			<b>Uncountable Sets:</b>A set that contains so many elements that they cannot be put in a one-to-one correspondence
+			with the set of natural numbers.
+			One way to think about this is that there is no way we could count all elements in these sets such that even if
+			the counting goes on forever, we could reach a particular time in some finite time. Infinite sets can be countable
+			or uncountable.
+		</p>
+
+		<div style="background-color:grey;">
+			<b> Homework: </b>
+			<p> <b>[Question 1]: </b> Consider two FAs A and B that accepts the languages given below:
+				<br>A: (a + b)*
+				<br>B: (a + b)*b
+				<br>Are the two FAs equivalent?
+			</p>
+
+
+
+		</div>
+
 		<h2>Undecidability - Hierarchy</h2>
 		<p>For the purpose of understanding undecidability, let us assume three classes of languages:
 			<ol>
@@ -26,6 +52,7 @@
 		<br>NOT RECURSIVELY ENUMERABLE LANGUAGES: Completely undecidable
 		<br>The above points become obvious since TMs can be constructed for the first two cases (halting TMs for the first, while general TMs for the second), but not the third.
 		</p>
+
 		<h3>Automata</h3>
 		<ul>
 			<li>For FAs, almost all properties are decidable</li>
