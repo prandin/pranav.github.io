@@ -16,14 +16,20 @@
 			One way to think about this is that there is no way we could count all elements in these sets such that even if
 			the counting goes on forever, we could reach a particular time in some finite time. Infinite sets can be countable
 			or uncountable.
+
+			<br><b>[Example 1]:</b>Consider the set of even numbers {2, 4, 6, ...}. If we map this set to the set of natural
+			numbers {1, 2, 3, ...}, observe the mappings {1*2 = 2, 2*2 = 4, 3*2 = 6, ..., k*2 = 2k, (k+1)*2 = 2k + 2, ...}.
+			Each subsequent element can be computed by taking a counting variable initialized to 1, which is doubled to
+			obtain the corresponding value in the set. To obtain the next element of the set, simply
+			increment by 1.
+			</body>
+			<br>While we do know that languages exist for which TMs cannot be constructed, it is difficult to given
+			an example of such as of now. We still do not know if this is possible or not.
 		</p>
 
 		<div style="background-color:grey;">
 			<b> Homework: </b>
-			<p> <b>[Question 1]: </b> Consider two FAs A and B that accepts the languages given below:
-				<br>A: (a + b)*
-				<br>B: (a + b)*b
-				<br>Are the two FAs equivalent?
+			<p> <b>[Question 1]: </b> Show that the set of odd numbers {1, 3, 5, 7, ...} is a countable set.
 			</p>
 
 
