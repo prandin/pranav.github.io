@@ -40,13 +40,24 @@
 					<br><i>S<sub>1</sub></i>&cap;<i>S<sub>2</sub></i>,
 					<br><i>S<sub>1</sub></i>&times;<i>S<sub>2</sub></i>,
 					<br><i>S<sub>1</sub></i>&minus;<i>S<sub>2</sub></i>
-				</ul>	
+				</ul>
 			<p>
 				While we do know that languages exist for which TMs cannot be constructed, it is difficult to given
 			an example of such as of now. We still do not know if this is possible or not.
 			</p>
 
+			<h3>Reducibility</h3>
+			<p>
+				A problem <i>P</i> is reducible to another problem Q if there exists an algorithm to convert
+				an instance of <i>P</i> to an instance of <i>Q</i>. It is written as <i>P</i> &leq; <i>Q</i>.
+				<br>
+				<b>[Theorem 1]:</b>
+				If <i>P</i> is reducible to <i>Q</i>, and if <i>P</i> is decidable, then <i>Q</i> is also decidable.
 
+				<br>
+				<b>[Theorem 2]:</b>
+				If <i>P</i> is reducible to <i>Q</i>, and if <i>P</i> is undecidable, then <i>Q</i> is also undecidable.
+ 			</p>
 
 		<div style="background-color:grey;">
 			<b> Homework: </b>
