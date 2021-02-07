@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Operating Systems - Quiz</title>
+</head>
+<body>
+
+  <h2>Processes and Threads</h2>
+  <ol>
+    <li>Compare user-level threads and kernel-level threads on the following characteristics: (a) transparency with respect to kernel,
+    (b) overhead, (c) efficiency and speed, (d) management.</li>
+
+    <li>[True/ False] "There is a lack of coordination between user-level threads and the kernel"</li>
+
+    <li>[True/ False] "User-level threads are faster to switch than kernel-level threads."</li>
+  </ol>
+
+  <h2>Process Management</h2>
+  <ol>
+    <li>A system has 10 resources of the same type. If each process of the system needs 4
+    resources, find the maximum number of such processes that can be accomodated
+    for the system to be deadlock-free.</li>
+
+    <li>If each of 4 processes spend 1/4th of its total burst time for I/O operations, find the CPU utilization (in %), assuming
+      that the I/O operations are overlapped.</li>
+
+    <li>[True/ False] "A process must have at least one thread." <b>[True, though it depends on implementation]</b></li>
+
+    <li>Which of the following are NOT shared between related threads: (a) Data (b) Stack (c) Code (d) Heap?</li>
+
+    <li>[True/ False] "If a user-level thread gets blocked, all its peers are also blocked" <b>[True]</b></li>
+
+    <li>How is a livelock different from a deadlock?</li>
+
+    <li>Four processes P1, P2, P3, P4 all arrive at the same time. Their total execution times in time units are 20, 10, 10, and 20 respectively.
+    The first 20% and last 20% of their total execution times are CPU bursts, while the remaining are IO bursts. The OS uses
+    longest remaining time first algorithm (preemptive), with priority given to processes with the lowest process ID when multiple processes
+    arrive at the ready queue with similar burst times. All I/O operations can be overlapped. Compute the average turaround time.</li>
+  </ol>
+
+  <h2>System Calls</h2>
+  <ol>
+    <li>[True/ False] "The virtual address of both parent process and child process will be same" <b>[True]</b></li>
+
+    <li>[True/ False] "The physical addres of both parent process and child process will be same during a fork() call." <b>[False]</b></li>
+
+
+  </ol>
+  <h2>Virtual Memory</h2>
+  <ol>
+    <li>A process has 1024 page tables in memory. Its corresponding page table is also stored in memory. The
+    overhead for reading a word from the page table is 5 ms. To reduce this overhead, the system has a
+    TLB holding 32 entries and can perform a complete search in 1 ms. Find the minimum hit rate (in %)
+    requird to reduce the mean overhead of accessing the page table to at most 2 ms.</li>
+
+    <li>An instruction takes a time of 5 ms and a page fault takes an additional time of 2 ms.
+      If on average a page fault occurs at every 100th instruction, find the effective instruction time.</li>
+
+      <li>A computer system implemnts 8 KB pages and a  32-bit physical address space.
+        Each page table entry contains a valid bit and the translation.
+        If the maximum size of the page table of a process is 20 megabytes, then find the length
+      of the virtual address supported by the system (in bits).
+      </li>
+
+      <li>Suppose a system uses SJF scheduling and it is estimated that the exponential average of the measured length of previous CPU burst is 0.25.
+        If the initial value of the predicted CPU burst time is 4 units, find the predicted time (in units) for the 4th CPU burst for a
+        process with burst times of 4 units, 12 units and 8 units respectively. </li>
+
+        <li>Assume that we have a demand-paged memory. The page table is held in registers. It takes 8 milliseconds to service a page fault if an empty frame is
+          available or if the replaced page is not modified and 20 milliseconds if the replaced page is modified.
+          Memory-access time is 100 nanoseconds.  Assume that the page to be replaced is modified 70 percent of the time.
+          What is the maximum acceptable page-fault rate for an effective access time of no more than 200 nanoseconds? <b>[Hint: Consider each case and their
+            probability: to find a page in main memory, page faulted - space available/ un-modified frame + all modified frames]</b></li>
+
+
+  </ol>
+
+  <h2>Memory Management</h2>
+  <ol>
+    <li>Consider a disk of size 80 GB. The size of a disk block is 8 kB.
+      Find the number of blocks required to keep track of free space using bit map method if the disk is initially empty.</li>
+
+    <li>In a particular Unix OS, each data block is of 256 bits and each node has 4 direct datablock addresses and 3 additional addresses:
+      One for single indirect block, one for double indirect block and one for triple indirect block.
+      Each block is addressed with 64 bits. Find the total size of a file possible in the file system (in k-bits).</li>
+  </ol>
+
+</body>
