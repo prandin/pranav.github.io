@@ -79,13 +79,16 @@
       <li>Can we allow non-distinct values for key values in the first-level (base) index in a multilevel indexing
       structure? How about variable-length entries?<b>[No!, and No!]</b></li>
       <li>Consider a multilevel index with a fanout of 4. If the base index has 1024 blocks, find (a) the number of levels,
-      and (b) the number of block accesses.<b>[Be careful! You have the number of blocks, not number of records.]</b></li>
+      and (b) the number of block accesses.<b>[Be careful! You have the number of blocks, not number of records.]</b></li><br>
 
       <li>Consider a Table T with a key field K. A B tree of order P, where P denotes the
         maximum number of record pointers in a B tree. Assume K is 10 bytes long,
         disk block size is 512 Bytes, record pointer is 8 bytes and block pointer size is 5 bytes long.
         Find the maximum value of P for each B tree node to fit in a single disk block .</li>
-      <li></li>
+      <li>Find the maximum number of data entries that can be stored in a 4-level B-tree (L0-L3) with order 23 where each node is 69% full.</li>
+      <li>Find the maximum number of data entries that can be stored in a 4-level B+-tree (L0 - L2, Lf)
+          where the order of the B+-tree is 34 and the order of leaf nodes is 31, and each node is
+          69% full.</li>
     </ol>
   </body>
 </html>
