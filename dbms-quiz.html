@@ -56,16 +56,31 @@
       <ol>
         <li>The blocking factor for the index file</li>
         <li>The number of blocks required for the index file</li>
-        <li>Number of block access required to perform a binary serch on the index file.</li>
+        <li>Number of block access required to perform binary search on the index file.</li>
+        <li>Number of block accesses required to retrieve a data record using the index. <b>[Observe the improvement
+          this method offers over simply performing binary search over the data blocks.]</b></li>
       </ol></li>
-      <li>What is the major issue with primary indexing?<b>[Insertions and deletions in a sorted file]</b></li>
+      <li>What is the major issue with primary indexing?<b>[Insertions and deletions in a sorted file]</b></li><br>
 
       <li>[True/ False] "For a clustering index, the block pointer for each distinct value will point to the anchor record
         of that block containing at least one record with that value in its clustering field" <b>[True]</b></li>
       <li>How are blocks corresponing to same clustering index linked? How is the problem of insertion alleviated in
       clustered indexing?</li>
       <li>How does linked-blocks clustered indexing vary from normal clustered indexing?<b>[Blocks will be exclusive for each distinct
-        value of clustering index; Efficient but memory wastage;]</b></li>
+        value of clustering index; Efficient but memory wastage;]</b></li><br>
+
+      <li>[True/ False] "A secondary index on a key field is a dense index" <b>[True; One entry for each record;]</b></li>
+      <li>Consider the data file and block pointer specifications given in question 4. If a secondary index is constructed
+        over a non-ordering key field of 11 B, find the number of blocks required for the index
+      and the number of block accesses using </li>
+      <li>Consider the secondary indexing implementation on a non-key field where several index entries for the same
+      key values exist. If the data file has 40000 records, find the total number of entries in the index file.</li><br>
+
+      <li>Can we allow non-distinct values for key values in the first-level (base) index in a multilevel indexing
+      structure? How about variable-length entries?<b>[No!, and No!]</b></li>
+      <li>Consider a multilevel index with a fanout of 4. If the base index has 1024 blocks, find (a) the number of levels,
+      and (b) the number of block accesses.<b>[Be careful! You have the number of blocks, not number of records.]</b></li>
+
       <li>Consider a Table T with a key field K. A B tree of order P, where P denotes the
         maximum number of record pointers in a B tree. Assume K is 10 bytes long,
         disk block size is 512 Bytes, record pointer is 8 bytes and block pointer size is 5 bytes long.
