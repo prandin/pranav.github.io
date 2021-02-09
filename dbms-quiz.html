@@ -37,8 +37,32 @@
 
     <h2>Indexing Structures</h2>
     <ol>
-      <li>Given a data file with 100 records per page and 1000 pages and on index pagecapacity of 512 index entries,
+      <li>Given a data file with 100 records per page and 1000 pages and on index page capacity of 512 index entries,
         how deep should be the B+ tree to index this file.</li>
+      <li>Consider 5 blocks B1 ... B5 for a large file having fields (ID, Department, Name) where ID is the primary key.
+        Each block Bi holds ID values 100*i to 100*i + 99. What are the first three primary index entries built for the data file?
+        Also write where their corresponding block pointers point to. </li>
+      <li>[True/ False] "A primary index is sparse"</li>
+      <li>Consider an ordered file with 40000 records stored on a disk with block size 1024 B. File records
+      are of fixed-length and are unspanned, with a record size of 100 B. Find:
+      <ol>
+        <li>The blocking factor for the data file</li>
+        <li>The number of blocks required for the file</li>
+        <li>Number of block accesses required to perform a binary search on the data file. </li>
+      </ol>
+      If the ordering key field for the file is 11 B long and a block pointer is 8 bytes long, and a primary
+    index is created for the file, find:
+      <ol>
+        <li>The blocking factor for the index file</li>
+        <li>The number of blocks required for the index file</li>
+        <li>Number of block access required to perform a binary serch on the index file.</li>
+      </ol></li>
+      <li>What is the major issue with primary indexing?<b>[Insertions and deletions in a sorted file]</b></li>
+      <li>Consider a Table T with a key field K. A B tree of order P, where P denotes the
+        maximum number of record pointers in a B tree. Assume K is 10 bytes long,
+        disk block size is 512 Bytes, record pointer is 8 bytes and block pointer size is 5 bytes long.
+        Find the maximum value of P for each B tree node to fit in a single disk block .</li>
+      <li></li>
     </ol>
   </body>
 </html>
