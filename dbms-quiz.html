@@ -36,6 +36,7 @@
     </ol>
 
     <h2>Indexing Structures</h2>
+    <p>Primary Indexing, Clustering Indexing, Secondary Indexing;</p>
     <ol>
       <li>Given a data file with 100 records per page and 1000 pages and on index page capacity of 512 index entries,
         how deep should be the B+ tree to index this file.</li>
@@ -58,6 +59,13 @@
         <li>Number of block access required to perform a binary serch on the index file.</li>
       </ol></li>
       <li>What is the major issue with primary indexing?<b>[Insertions and deletions in a sorted file]</b></li>
+
+      <li>[True/ False] "For a clustering index, the block pointer for each distinct value will point to the anchor record
+        of that block containing at least one record with that value in its clustering field" <b>[True]</b></li>
+      <li>How are blocks corresponing to same clustering index linked? How is the problem of insertion alleviated in
+      clustered indexing?</li>
+      <li>How does linked-blocks clustered indexing vary from normal clustered indexing?<b>[Blocks will be exclusive for each distinct
+        value of clustering index; Efficient but memory wastage;]</b></li>
       <li>Consider a Table T with a key field K. A B tree of order P, where P denotes the
         maximum number of record pointers in a B tree. Assume K is 10 bytes long,
         disk block size is 512 Bytes, record pointer is 8 bytes and block pointer size is 5 bytes long.
