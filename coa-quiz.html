@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COA Quiz</title>
+  </head>
+  <body>
+
+    <h2>Cache Organization</h2>
+    <p>Block Size;</p>
+    <ol>
+      <li>The TAG holds the memory ___________ [address/ data], while BLOCK holds the memory ___________ [address/ data].</li>
+      <li>How is spatial locality different from temporal locality?</li>
+      <li>Consider a cache organization where the TAG bits and BLOCK-OFFSET bits can together be stored in 32 bits. If the
+      main memory is byte-addressable, find the size of TAG bits if the block sizes are: (a) 1 byte, (b) 2 bytes. </li>
+      <li>Consider a memory addressable with 32-bit addresses that are byte addressable. The cache organization is a
+      32KB direct-mapped cache, with a block size of 128 B. What percentage of cache memory is stored as overhead assuming each
+      cache entry would have to store 19 bits as storage overhead?</li>
+      <li>What are the components of a direct-mapped cache? <b>[TAG, LINE-INDEX, BLOCK-OFFSET]</b></li>
+      <li>How is fully-associative cache different from direct-mapped cache? <b>[The cache partitions memory into as many regions
+        as there are cache lines]</b></li>
+      <li>[True/ False] "A direct-mapped cache does not allow LRU page replacement" <b>[True]</b></li>
+      <li>What are the components of a set-associative cache? <b>[TAG, SET-INDEX, BLOCK-OFFSET]</b></li>
+      <li>How do we resolve the capacity, conflict, and compulsory cache misses? <b>[Capacity: increase cache size; Conflict: increase associativity (fully associative cache is free from this)
+        ; Compulsory miss: increase the block size (though this cannot be avoided)]</b></li>
+      <li>How is associativity linked with hit time?</li>
+    </ol>
+
+    <h2>Performance Metrics</h2>
+    <p>Metrics for Comparing Machines - Execution time, Throughput, CPU Time, MIPS;
+
+    </p>
+    <ol>
+      <li>How is execution time different from CPU time?</li>
+      <li>What is the performance of a machine that can execute a program in 10 ns? <b>[Reciprocal]</b></li>
+      <li>Consider a 1 MHz clock rate CPU. A program takes 45 million cycles to execute. What is the CPU time?</li>
+      <li>For a benchmark, 25% of instructions are loads, 50% instructions are adds, and 25% instructions are square root, each
+      taking 2 cycles, 1 cycle, and 50 cycles respectively. Find the average CPI for this benchmark.</li>
+      <li>A 500 MHz machine has three classes of instructions: class A, class B, and class C, which require one, two and three clock cycles
+      respectively. The code to be executed as 5 billion class A instructions, 1 billion class B instructions, and 1 billion class C instructions.
+      Compute the MIPS for the machine. <b>[MIPS = instruction count / (execution time * 10^6)]</b></li>
+    </ol>
+
+    <h2>Pipelining</h2>
+    <p>Uniform Stage Delays; Non-Uniform Stage Delays;</p>
+    <ol>
+      <li>Consider an instruction pipeline with four stages having stage delays 5 ns, 6 ns, 11 ns, and 8 ns respectively. The
+      interstage register delay for the pipeline is 1 ns. Find (a) the total time taken to execute n instructions in non-pipelined fashion,
+      (b) clock period (stage time) for the pipelined implementation, and (c) speedup.</li>
+    </ol>
+  </body>
+</html>

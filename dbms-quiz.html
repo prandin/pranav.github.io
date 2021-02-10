@@ -6,7 +6,10 @@
   </head>
   <body>
     <p>This page will contain quiz questions that test understanding in the
-    theoretical aspects of the course. I have ignored questions related to ER diagrams.</p>
+    theoretical aspects of the course. I have ignored questions related to ER diagrams.
+    <br>
+    <a href="https://www.cs.uct.ac.za/mit_notes/database/htmls/chp11.html">File Organization and Indexes</a>
+    </p>
     <h2>Key Constraints</h2>
     <ol>
       <li>[True/ False] "If X is a foreign key in R that references the primary key P of S,
@@ -23,6 +26,15 @@
       <li>[True/ False] "Some redundancy is possible in a 3NF relation" <b>[True]</b></li>
       <li>[True/ False] "Decompositions into 3NF are always lossless and dependency preserving" <b>[True]</b></li>
       <li>[True/ False] "The natural join of two relations in BCNF is always BCNF" <b>[False; e.g. see decompostions into BCNF]</b></li>
+      <li>[True/ False] (a)If relation R is in 3NF and every key is simple, then R is in BCNF
+    (b) If relation R is in 3NF and R has only one key, then R is in BCNF
+     </li>
+     <li>Consider a relation R in 3NF and every key in R is simple. For a
+     functional dependency X -> Y that holds in R, prove that X must always be a
+    super key.<b>[Proof by Contradiction]</b></li>
+      <li>When does BCNF differ from 3NF?"</li>
+      <li>[True/ False] "A 3NF relation with two or more overlapping candidate keys is
+        guaranteed to NOT be in BCNF" <b>[False]</b></li>
     </ol>
 
     <h2>Relational Algebra</h2>
@@ -36,14 +48,15 @@
     </ol>
 
     <h2>Indexing Structures</h2>
-    <p>Primary Indexing, Clustering Indexing, Secondary Indexing;</p>
+    <p>Single-Level Indexing: Primary Indexing, Clustering Indexing, Secondary Indexing; Multilevel Indexing; Dynamic Multilevel Indexing
+    - B-trees, B+ trees;</p>
     <ol>
       <li>Given a data file with 100 records per page and 1000 pages and on index page capacity of 512 index entries,
         how deep should be the B+ tree to index this file.</li>
       <li>Consider 5 blocks B1 ... B5 for a large file having fields (ID, Department, Name) where ID is the primary key.
         Each block Bi holds ID values 100*i to 100*i + 99. What are the first three primary index entries built for the data file?
         Also write where their corresponding block pointers point to. </li>
-      <li>[True/ False] "A primary index is sparse"</li>
+      <li>[True/ False] "A primary index can be sparse or dense"</li>
       <li>Consider an ordered file with 40000 records stored on a disk with block size 1024 B. File records
       are of fixed-length and are unspanned, with a record size of 100 B. Find:
       <ol>
@@ -86,9 +99,17 @@
         disk block size is 512 Bytes, record pointer is 8 bytes and block pointer size is 5 bytes long.
         Find the maximum value of P for each B tree node to fit in a single disk block .</li>
       <li>Find the maximum number of data entries that can be stored in a 4-level B-tree (L0-L3) with order 23 where each node is 69% full.</li>
-      <li>Find the maximum number of data entries that can be stored in a 4-level B+-tree (L0 - L2, Lf)
-          where the order of the B+-tree is 34 and the order of leaf nodes is 31, and each node is
+      <li>Find the maximum number of data entries that can be stored in a 4-level B+ tree (L0 - L2, Lf)
+          where the order of the B+ tree is 34 and the order of leaf nodes is 31, and each node is
           69% full.</li>
+      <li>The minimum number of keys in a non-root node of a B+ tree is 3. Find the maximum number of keys in any non-root node.</li>
+    </ol>
+
+    <h2>Concurrency Control</h2>
+    <p>Schedules;</p>
+    <ol>
+      <li>If three transactions T1, T2, and T3 have 2, 3, and 4 operations respectively, find the
+      total number of non-serial, concurrent schedules possible.</li>
     </ol>
   </body>
 </html>
