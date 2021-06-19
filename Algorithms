@@ -1,0 +1,40 @@
+Quiz Questions:
+These are very basic quiz questions designed to test your knowledge about the concepts covered in the course.
+
+Dynamic Programming:
+1. How is dynamic programming different from Divide and Conquer strategy?
+2. What do you mean by optimal substructure?
+3. What are the general steps to solve using DP?
+4. What are the characteristics of a problem solved using DP?
+5. How do you recursively define the solution to a rod-cutting problem?
+
+Greedy Algorithms:
+1. How are greedy algorithms different from DP?
+2. What are the characteristics of a problem solved by a greedy algorithm?
+
+Graph Algorithms:
+1. Which graph representation is faster for testing the adjacency of two nodes?
+2. Is it possible for the DFS of a directed acyclic graph to have back edges?
+3. How are strongly connected components in a graph determined?
+4. What is the time complexity difference of BFS and DFS?
+5. Can BFS and DFS generate spanning trees?
+
+Minimum Spanning Trees:
+1. Let A be the subset of edges included in some MST and (S, V-S) be the cut that respects A. If some edge (a, b) is a light edge crossing the cut, is it safe to add (a, b) to the set A?
+2. Can Prim's algorithm detect a forest (collection of trees)?
+3. What is the performance of Kruskal's algorithm?
+4. What is the performance of Prim's algorithm if the priority queue is implemented using (a) binary heap, and (b) Fibonacci heap?
+
+Shortest Path Algorithms:
+1. How does the shortest path problem show optimal substructure property?
+2. Prove that a subpath of a shortest path is a shortest path.
+3. Does Bellman-Ford algorithm find the shortest path for graphs with negative edges? [No; But it detects them]
+4. What data structure is used to implement Dijkstra's algorithm? [Priority Queue]
+5. What is the performance of Bellman-Ford algorithm?
+6. What is the performance of Dijkstra's algorithm if the priority queue is implemented using a binary heap?
+7. What is the convergence property?
+
+Tips:
+* Be aware of the time complexities of all the basic algorithms discussed during the course. These include:
+Dijkstra, Bellman-Ford, Kruskal, Prim, BFS, DFS (and its applications), Huffman Encoding, Quicksort, Heaps - Heapify, Build, Heapsort; MergeSort, Insertion Sort;
+* 
